@@ -3,18 +3,18 @@
 agent_info:
     name: 'contiki_control_agent'
     info: 'WiSHFUL example Contiki control agent'
-    iface: 'eth0'
+    iface: 'eno1'
 
 modules:
     discovery:
         module : wishful_module_discovery_pyre
         class_name : PyreDiscoveryAgentModule
-        kwargs: {"iface":eth0, "groupName":"wishful_contiki"}
+        kwargs: {"iface":eno1, "groupName":"wishful_contiki"}
     gitar_engine:
         module : wishful_module_gitar
         class_name : GitarEngine
         interfaces : ['lowpan0']
-        kwargs : {'GitarConfig' : './config/wilab2/gitar.ini','SupportedInterfaces' : ['lowpan0'],'ControlExtensions' : {'taisc' : './taisc_control_extensions.csv', 'rime' : './rime_control_extensions.csv'}}
+        kwargs : {'GitarConfig' : './config/wilab2/gitar.ini','SupportedInterfaces' : ['lowpan0'],'ControlExtensions' : {'taisc' : '../ewine/taisc_control_extensions.csv', 'rime' : '../ewine/rime_control_extensions.csv'}}
     taisc_connector:
         module : wishful_module_taisc
         class_name : TAISCConnector

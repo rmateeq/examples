@@ -3,8 +3,8 @@
 controller:
     name: "contiki_global_control"
     info: "Example Contiki global control program"
-    dl: "tcp://10.0.3.2:8990"
-    ul: "tcp://10.0.3.2:8989"
+    dl: "tcp://10.0.3.17:8990"
+    ul: "tcp://10.0.3.17:8989"
 
 modules:
     discovery:

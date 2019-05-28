@@ -10,4 +10,4 @@ modules:
     discovery:
         module : wishful_module_discovery_pyre
         class_name : PyreDiscoveryControllerModule
-        kwargs: {"iface":"eno1", "groupName":"wishful_contiki", "downlink":"tcp://10.0.3.2:8990", "uplink":"tcp://10.0.3.2:8989"}
+        kwargs: {"iface":"eno1", "groupName":"wishful_contiki", "downlink":"tcp://10.0.3.17:8990", "uplink":"tcp://10.0.3.17:8989"}
